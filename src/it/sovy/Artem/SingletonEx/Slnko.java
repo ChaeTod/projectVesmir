@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Slnko {
 
-    static List<Planeta> Planets = new ArrayList<>();
+    static List<Planeta> planets = new ArrayList<>();
 
     private static Slnko sln;
 
@@ -20,7 +20,7 @@ public class Slnko {
 
     public static boolean addPlaneta(Planeta planeta){
         if (planeta != null){
-            Planets.add(planeta);
+            planets.add(planeta);
             return true;
         } else {
             System.out.println("Some error has been appeared in inputs!");
@@ -29,8 +29,8 @@ public class Slnko {
     }
 
     public static void showPlanets(){
-        if (Planets != null) {
-            for (Planeta st : Planets) {
+        if (planets != null) {
+            for (Planeta st : planets) {
                 System.out.println("name: " + st.getName() + " mass: " + st.getMass() + " distance: " + st.getDistance());
             }
         }
